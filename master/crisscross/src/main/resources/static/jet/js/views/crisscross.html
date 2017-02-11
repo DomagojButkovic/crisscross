@@ -1,0 +1,49 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div id='buttons-container'>
+
+    <div id="firstRow" data-bind="ojComponent: {component: 'ojButtonset'}">
+        <button id="c11" data-bind="click: buttonGridClick"></button>
+        <button id="c12" data-bind="click: buttonGridClick"></button>
+        <button id="c13" data-bind="click: buttonGridClick"></button>
+    </div>
+
+    <div id="secondRow" data-bind="ojComponent: {component: 'ojButtonset'}">
+        <button id="c21"   data-bind="click: buttonGridClick"></button>
+        <button id="c22" data-bind="click: buttonGridClick"></button>
+        <button id="c23" data-bind="click: buttonGridClick"></button>
+    </div>
+
+
+    <div id="thirdRow" data-bind="ojComponent: {component: 'ojButtonset'}">
+        <button id="c31"   data-bind="click: buttonGridClick"></button>
+        <button id="c32" data-bind="click: buttonGridClick"></button>
+        <button id="c33" data-bind="click: buttonGridClick"></button>
+    </div>
+
+
+</div>
+
+
+<div id="controls">
+    <input id="player-input" 
+           type="text"
+           data-bind="ojComponent: {component: 'ojInputText', 
+                                  value: playerName}"/>
+    <button id="gameStart" data-bind="click: buttonStartGameClick">Start Game</button>
+    <button id="gameStats" data-bind="click: buttonStatsClick">Stats</button>
+</div>
+
+<div id="stats">
+
+    <textarea id="resizeBothStats" 
+              style="resize: both;"
+              data-bind="ojComponent: {component: 'ojTextArea', 
+                                     value: statsValue}" ></textarea>
+
+
+</div>
