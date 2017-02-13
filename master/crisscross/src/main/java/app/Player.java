@@ -70,9 +70,9 @@ public class Player {
         EGameMode mode;
         if(gamesPlayed ==0){
             mode = EGameMode.easy;
-        }else if((double)(wins/ gamesPlayed) <= 0.3d){
+        }else if((double)((wins*1d)/ (gamesPlayed)) <= 0.3d){
             mode = EGameMode.easy;
-        }else if((double)(wins/ gamesPlayed) >  0.9d){
+        }else if((double)((wins*1d)/ gamesPlayed) >  0.9d){
             mode = EGameMode.hard;
         }else {
             Random random = new Random();
